@@ -1,0 +1,46 @@
+.userCard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.userCard h1{
+    color: rgb(189, 0, 252);
+}
+
+.userCard h2{
+    color: rgb(177, 255, 180);
+}
+
+.userCard h1 span {
+    color: rgb(58, 245, 58);
+}
+
+.userCard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  margin: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  line-height: 2;
+  background: url("https://images.unsplash.com/photo-1625586096899-e90276f25248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYyNjM0MzIzMg&ixlib=rb-1.2.1&q=80&w=1080");
+  animation: scroll 70s linear infinite;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .userCard {
+    animation: scroll 200s linear infinite;
+  }
+}
+
